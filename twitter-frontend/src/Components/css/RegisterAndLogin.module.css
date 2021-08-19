@@ -1,0 +1,101 @@
+.registerCont{
+
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.623),rgba(0, 0, 0, 0.664)),url("../../Images/Screenshots/twitterHome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 93vh;
+    background-size: cover;
+
+}
+
+.loginCont{
+
+    width: 30%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.registerForm{
+
+    border: 1px solid white;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.registerForm input{
+
+    width: 70%;
+    padding: 20px;
+    border: 2px solid #1A90DB;
+    border-radius: 4px;
+}
+
+.loginForm{
+
+    border: 1px solid white;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.loginForm input{
+
+    width: 95%;
+    padding: 20px;
+    border: 2px solid #1A90DB;
+    border-radius: 4px;
+
+}
+
+#registerBtn{
+    width: 70%;
+    font-size: 18px;
+    border: none;
+    background-color: #1A90DB;
+    color: white;
+    padding: 10px 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#registerBtn:hover{
+
+    background-color: #5ebaf3;
+}
+
+#loginBtn{
+    width: 90%;
+    font-size: 18px;
+    border: none;
+    background-color: #1A90DB;
+    color: white;
+    padding: 10px 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#loginBtn:hover{
+
+    background-color: #5ebaf3;
+}
+
+.twitterLogo{
+    text-align: left;
+    font-size: 50px;
+    color: #1A90DB;
+}
