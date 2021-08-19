@@ -10,6 +10,9 @@ const usersController = require("./Controller/users.controller")
 app.use('/users', usersController);
 
 
+const tweetController = require("./Controller/tweet.controller")
+app.use("/postTweets", tweetController)
+
 app.listen(5000, async () => {
 
     await connect()
