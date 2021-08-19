@@ -39,8 +39,8 @@ function Login() {
             setData(res.data);
             console.log(res.data)
             if (res.data.message === "Login Successful") {
-                saveLogin("data", { auth: true, name: res.data.name });
-
+                saveLogin(res.data.data._id, { auth: true, name: res.data.name, id: res.data.data._id });
+                history.push("/home")
             }
         })
             .catch((err) => {

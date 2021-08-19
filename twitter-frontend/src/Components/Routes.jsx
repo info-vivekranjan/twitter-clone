@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { Register } from './Register';
 import { WelcomePage } from './WelcomePage';
 import { Login } from './Login'
+import { SideBar } from './SideBar';
 function Routes() {
 
     return (
@@ -22,6 +23,11 @@ function Routes() {
                 <Route path="/login" exact>
 
                     <Login />
+
+                </Route>
+
+                <Route to="/home">
+                    <SideBar />
 
                 </Route>
 
