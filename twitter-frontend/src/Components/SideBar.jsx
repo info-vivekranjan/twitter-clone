@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import styles from './css/SideBar.module.css';
 import { Divider } from '@material-ui/core'
 
@@ -49,26 +49,32 @@ const links = [
 
 function SideBar() {
 
+
     return (
-        <div className={styles.sidebarCont}>
+        <>
+            <div className={styles.homeTop}>
+                <div>Home</div>
+            </div>
+            <div className={styles.sidebarCont}>
 
-            <Link to="/home" className={styles.sidebarTwitterLogo}>
-                <i className="ri-twitter-fill"></i>
-            </Link>
-            <div className={styles.sidebarLinksCont}>
-                {
-                    links.map((item) => {
-                        return <div className={styles.linksCont}>
+                <Link to="/home" className={styles.sidebarTwitterLogo}>
+                    <i className="ri-twitter-fill"></i>
+                </Link>
+                <div className={styles.sidebarLinksCont}>
+                    {
+                        links.map((item) => {
+                            return <div className={styles.linksCont}>
 
-                            <Link className={styles.sidebarLinks} to={`${item.to}`}><span className={styles.linkLogo}> {item.logo} </span> <span>{item.title}</span> </Link>
+                                <Link className={styles.sidebarLinks} to={`${item.to}`}><span className={styles.linkLogo}> {item.logo} </span> <span>{item.title}</span> </Link>
 
-                        </div>
-                    })
-                }
+                            </div>
+                        })
+                    }
+
+                </div>
 
             </div>
-
-        </div>
+        </>
     )
 
 }

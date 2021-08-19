@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const tweetSchema = new mongoose.Schema({
     postTweet: { type: String, required: true },
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: "user", required: true },
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "user" },
     imgUrl: { type: String }
 },
     {

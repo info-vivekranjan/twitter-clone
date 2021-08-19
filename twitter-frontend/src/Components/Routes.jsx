@@ -4,6 +4,7 @@ import { Register } from './Register';
 import { WelcomePage } from './WelcomePage';
 import { Login } from './Login'
 import { SideBar } from './SideBar';
+import { HomePage } from './HomePage';
 function Routes() {
 
     return (
@@ -28,7 +29,7 @@ function Routes() {
 
                 <Route to="/home">
                     <SideBar />
-
+                    <HomePage />
                 </Route>
 
                 <Route>

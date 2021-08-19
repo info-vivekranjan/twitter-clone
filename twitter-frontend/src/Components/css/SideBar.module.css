@@ -1,3 +1,16 @@
+.homeTop{
+    width: 50vw;
+    margin-left: 23vw;
+    border-left: 1px solid #dadada6c;
+    border-right: 1px solid #dadada6c;
+    border-bottom: 1px solid #dadada6c;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
 .sidebarCont{
 
     border-right: 1px solid #dadada6c;
