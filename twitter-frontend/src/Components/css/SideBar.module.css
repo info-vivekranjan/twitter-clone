@@ -9,6 +9,9 @@
     font-weight: 700;
     padding-left: 15px;
     padding-top: 10px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
 }
 
 .sidebarCont{

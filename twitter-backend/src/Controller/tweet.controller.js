@@ -20,5 +20,14 @@ router.get("/", async (req, res) => {
 
 })
 
+router.delete("/:id", async (req, res) => {
+
+    const deleteTweets = await Tweet.findByIdAndDelete(req.params.id)
+
+    return res.status(204).json({ data: deleteTweets })
+
+})
+
+
 
 module.exports = router

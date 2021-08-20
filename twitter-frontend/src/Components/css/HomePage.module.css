@@ -3,12 +3,88 @@
     margin-left: 23vw;
     /* margin-top: 50px; */
     border-right: 1px solid #dadada6c;
-    min-height: 100vh;
+    padding-bottom: 50px;
+    padding-top: 60px;
 }
 .postTweet{
     width: 51.2vw;
-    height: 15vh;
+    /* height: 15vh; */
     border-bottom: 1px solid #dadada6c;
+    padding-bottom: 15px;
 
+}
+.tweetCont{
+
+    width: 51.2vw;
+    /* height: 15vh; */
+
+}
+.tweetText{
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+}
+.tweetImg{
+    text-align: center;
+    
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.tweetImg > img{
+
+    width: 90%;
+
+}
+
+.userName{
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.userName>div:nth-child(1){
+
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.userName>div:nth-child(2){
+
+    color: rgb(255, 0, 98);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tweetButton{
+    background-color: #1A90DB;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    padding: 7px 20px;
+    cursor: pointer;
+
+}
+
+.tweetButton:hover{
+    background-color: #5ea5d1;
+    
+}
+.tweetButtonDisabled{
+
+    background-color: #7fbbe0;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    padding: 7px 20px;
+    cursor: pointer;
 
 }
